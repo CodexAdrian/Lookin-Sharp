@@ -168,6 +168,12 @@ allprojects {
             }
         }
         maven { url = "https://nexus.resourcefulbees.com/repository/maven-public/"}
+        maven {
+            url "https://maven.jamieswhiteshirt.com/libs-release"
+            content {
+                includeGroup "com.jamieswhiteshirt"
+            }
+        }
     }
 
     tasks.withType(JavaCompile).tap {

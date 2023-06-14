@@ -4,46 +4,39 @@ license = "Terrarium Licence"
 issueTrackerURL = "https://github.com/terrarium-earth/modid/issues"
 
 [[mods]]
-modId = "modid"
+modId = "unsheathed"
 version = "${version}"
-displayName = "ModName"
-displayURL = "https://www.curseforge.com/minecraft/mc-mods/modid"
+displayName = "Unsheathed"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/unsheathed"
 logoFile = "icon.png"
 authors = ""
 credits = ""
 description = ""
 
-[[dependencies.modid]]
+[[dependencies.unsheathed]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.modid]]
+[[dependencies.unsheathed]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.modid]]
+[[dependencies.unsheathed]]
 modId = "resourcefullib"
 mandatory = true
 versionRange = "[${resourcefullib_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.modid]]
+[[dependencies.unsheathed]]
 modId = "resourcefulconfig"
 mandatory = true
 versionRange = "[${resourcefulconfig_version},)"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.modid]]
-modId = "botarium"
-mandatory = true
-versionRange = "[${botarium_version},)"
 ordering = "NONE"
 side = "BOTH"

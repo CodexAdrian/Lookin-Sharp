@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "unsheathed",
   "version": "${version}",
-  "name": "ModName",
+  "name": "Unsheathed",
   "description": "",
   "authors": [
-    ""
+    "Joosh",
+    "CodexAdrian"
   ],
   "contributors": [
   ],
@@ -19,19 +20,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.modid.fabric.ModIdFabric",
-      "earth.terrarium.modid.ModId::postInit"
+      "earth.terrarium.unsheathed.fabric.ModIdFabric",
+      "earth.terrarium.unsheathed.Unsheathed::postInit"
     ],
     "client": [
-      "earth.terrarium.modid.client.fabric.ModIdClientFabric"
+      "earth.terrarium.unsheathed.client.fabric.UnsheathedClientFabric"
     ],
     "modmenu": [
-      "earth.terrarium.modid.common.config.fabric.ModMenuConfig"
+      "earth.terrarium.unsheathed.common.config.fabric.ModMenuConfig"
     ]
   },
   "mixins": [
-    "modid.mixins.json",
-    "modid-common.mixins.json"
+    "unsheathed.mixins.json",
+    "unsheathed-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",
