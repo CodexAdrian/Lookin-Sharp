@@ -38,8 +38,6 @@ dependencies {
     modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:$rootProject.rei_version"
 
     modApi "com.teamresourceful.resourcefullib:resourcefullib-fabric-$minecraft_version:$rootProject.resourcefullib_version"
-    modApi "com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-$minecraft_version:$rootProject.resourcefulconfig_version"
-    modApi "earth.terrarium:botarium-fabric-$rootProject.minecraft_version:$rootProject.botarium_version"
 
     include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:$rea_version")
 }
@@ -51,8 +49,7 @@ processResources {
         expand "version": rootProject.version,
                 "fabric_loader_version": rootProject.fabric_loader_version,
                 "resourcefullib_version": rootProject.resourcefullib_version,
-                "resourcefulconfig_version": rootProject.resourcefulconfig_version,
-                "botarium_version": rootProject.botarium_version
+                "resourcefulconfig_version": rootProject.resourcefulconfig_version
     }
 }
 
@@ -87,6 +84,7 @@ components.java {
 
 repositories {
     maven { url "https://maven.terraformersmc.com" }
+    mavenLocal()
 }
 
 def ENV = System.getenv()

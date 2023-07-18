@@ -49,8 +49,6 @@ dependencies {
     modLocalRuntime("mezz.jei:jei-$rootProject.minecraft_version-forge:$rootProject.jei_version") { transitive = false }
 
     modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$minecraft_version:$rootProject.resourcefullib_version"
-    modApi "com.teamresourceful.resourcefulconfig:resourcefulconfig-forge-$minecraft_version:$rootProject.resourcefulconfig_version"
-    modApi "earth.terrarium:botarium-forge-$rootProject.minecraft_version:$rootProject.botarium_version"
 }
 
 processResources {
@@ -58,8 +56,7 @@ processResources {
     filesMatching("META-INF/mods.toml") {
         expand "version": rootProject.version,
                 "resourcefullib_version": rootProject.resourcefullib_version,
-                "resourcefulconfig_version": rootProject.resourcefulconfig_version,
-                "botarium_version": rootProject.botarium_version
+                "resourcefulconfig_version": rootProject.resourcefulconfig_version
     }
 }
 

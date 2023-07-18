@@ -20,25 +20,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.unsheathed.fabric.ModIdFabric",
+      "earth.terrarium.unsheathed.fabric.UnsheathedFabric",
       "earth.terrarium.unsheathed.Unsheathed::postInit"
     ],
     "client": [
       "earth.terrarium.unsheathed.client.fabric.UnsheathedClientFabric"
-    ],
-    "modmenu": [
-      "earth.terrarium.unsheathed.common.config.fabric.ModMenuConfig"
     ]
   },
   "mixins": [
-    "unsheathed.mixins.json",
-    "unsheathed-common.mixins.json"
+    "unsheathed.mixins.json"
   ],
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.19",
-    "resourcefullib": ">=${resourcefullib_version}",
-    "resourcefulconfig": ">=${resourcefulconfig_version}",
-    "botarium": ">=${botarium_version}"
+    "resourcefullib": ">=${resourcefullib_version}"
   }
 }

@@ -4,6 +4,7 @@ architectury {
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+    modCompileOnly "tech.thatgravyboat:commonats:1.0"
 
     modCompileOnly "mezz.jei:jei-$rootProject.minecraft_version-common-api:$rootProject.jei_version"
     modRuntimeOnly "mezz.jei:jei-$rootProject.minecraft_version-common:$rootProject.jei_version"
@@ -11,15 +12,12 @@ dependencies {
     modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin:$rootProject.rei_version"
 
     modApi "com.teamresourceful.resourcefullib:resourcefullib-common-$minecraft_version:$rootProject.resourcefullib_version"
-    modApi "com.teamresourceful.resourcefulconfig:resourcefulconfig-common-$minecraft_version:$rootProject.resourcefulconfig_version"
-    modApi "earth.terrarium:botarium-common-$rootProject.minecraft_version:$rootProject.botarium_version"
 }
 
 processResources {
     inputs.property "version", rootProject.version
     inputs.property "resourcefullib_version", rootProject.resourcefullib_version
     inputs.property "resourcefulconfig_version", rootProject.resourcefulconfig_version
-    inputs.property "botarium_version", rootProject.botarium_version
 }
 
 def ENV = System.getenv()

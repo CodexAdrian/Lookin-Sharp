@@ -1,0 +1,38 @@
+{
+  "type": "unsheathed:forging",
+  "input": {
+    "item": "minecraft:golden_sword"
+  },
+  "results": [
+    {
+      "id": "unsheathed:golden_sword"
+    },
+    {
+      "id": "unsheathed:golden_broadsword"
+    },
+    {
+      "id": "unsheathed:golden_cutlass"
+    },
+    {
+      "id": "unsheathed:golden_shortsword"
+    },
+    {
+      "id": "unsheathed:golden_gladius"
+    },
+    {
+      "id": "unsheathed:golden_cleaver"
+    },
+    {
+      "id": "unsheathed:golden_honed_sword"
+    },
+    {
+      "id": "unsheathed:golden_greatsword"
+    },
+    {
+      "id": "unsheathed:golden_scythe"
+    },
+    {
+      "id": "unsheathed:golden_spear"
+    }
+  ]
+}

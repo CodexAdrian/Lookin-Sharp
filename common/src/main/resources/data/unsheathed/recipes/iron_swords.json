@@ -1,0 +1,38 @@
+{
+  "type": "unsheathed:forging",
+  "input": {
+    "item": "minecraft:iron_sword"
+  },
+  "results": [
+    {
+      "id": "unsheathed:iron_sword"
+    },
+    {
+      "id": "unsheathed:iron_broadsword"
+    },
+    {
+      "id": "unsheathed:iron_cutlass"
+    },
+    {
+      "id": "unsheathed:iron_shortsword"
+    },
+    {
+      "id": "unsheathed:iron_gladius"
+    },
+    {
+      "id": "unsheathed:iron_cleaver"
+    },
+    {
+      "id": "unsheathed:iron_honed_sword"
+    },
+    {
+      "id": "unsheathed:iron_greatsword"
+    },
+    {
+      "id": "unsheathed:iron_scythe"
+    },
+    {
+      "id": "unsheathed:iron_spear"
+    }
+  ]
+}

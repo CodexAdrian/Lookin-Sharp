@@ -1,4 +1,4 @@
-// 1.19.2	2023-04-23T20:13:08.915437	Item Models: unsheathed
+// 1.20.1	2023-07-18T15:26:14.492557	Item Models: unsheathed
 7952363cf0c4605122e7a32e94c1c2adab1ad814 assets/unsheathed/models/item/diamond_broadsword.json
 9d12c5ceb702909424d65836c6b8da77314f9124 assets/unsheathed/models/item/diamond_cleaver.json
 e33414583e105be6de5477f6d9ae9a3c8fe2c81c assets/unsheathed/models/item/diamond_cutlass.json
@@ -9,16 +9,16 @@ e33414583e105be6de5477f6d9ae9a3c8fe2c81c assets/unsheathed/models/item/diamond_c
 4ad5d09424fd13a44d5441e6335998bcaa4e05cb assets/unsheathed/models/item/diamond_shortsword.json
 d4322f859f02b6bb8273ca6bd3f9c31c1a8f7450 assets/unsheathed/models/item/diamond_spear.json
 1c4e152e77898775bc6bc94e72dc840d76fbf43c assets/unsheathed/models/item/diamond_sword.json
-7370192f5395471b569174da5926a6a990e9e817 assets/unsheathed/models/item/gold_broadsword.json
-f8bc7f2c81165bfbc83cd969146d1f54fd85d7f8 assets/unsheathed/models/item/gold_cleaver.json
-f8bc168bb005441d7bdf242e8730d5e9628caa43 assets/unsheathed/models/item/gold_cutlass.json
-6b9e93f6d174abccadde8eb6743466aa2b3e72e3 assets/unsheathed/models/item/gold_gladius.json
-54f0b9a19518eb6e84005d3ca2cff795b92e17b8 assets/unsheathed/models/item/gold_greatsword.json
-21f2b21e07b734269d250525543d2cb0053b52b3 assets/unsheathed/models/item/gold_honed_sword.json
-a1737e1dbdf0686c2d230fab091f02e173d3c30e assets/unsheathed/models/item/gold_scythe.json
-15af1cdb0286b43231c7a1dc8b0ece86e7a3acaa assets/unsheathed/models/item/gold_shortsword.json
-96ba8614cb3c0b95602a67bc81ceeaed728ebf9a assets/unsheathed/models/item/gold_spear.json
-6f547773e99430704bd9f1bdf0eacaa1550e1269 assets/unsheathed/models/item/gold_sword.json
+3f526e47a6a6d31cd82bf10b2d91fb05fff0f2c3 assets/unsheathed/models/item/golden_broadsword.json
+9474b3905acc5d08a6595172537cddc5a6c0d0cc assets/unsheathed/models/item/golden_cleaver.json
+a2b6a0953aaa19a8703f6bb1bf7be4b4d1699ae9 assets/unsheathed/models/item/golden_cutlass.json
+6a880d7c66dc95860bff709649fc987091edf3fc assets/unsheathed/models/item/golden_gladius.json
+848a8d51df9d56af88a6cf8acb02abfa1917ed94 assets/unsheathed/models/item/golden_greatsword.json
+29f4e0b30aeaec68d9fa04990896fe0ca8a838e9 assets/unsheathed/models/item/golden_honed_sword.json
+5f237c87dd43beebe699ec4925a804e10f1c389b assets/unsheathed/models/item/golden_scythe.json
+2f98c94bfe50da66c07cd72be90b6d19228acf43 assets/unsheathed/models/item/golden_shortsword.json
+1adfbad39fe34a61174a63a4b3bf8f511c6f3c11 assets/unsheathed/models/item/golden_spear.json
+c8a668f4357cdf4e659cef0b4e914e1ca2c122f9 assets/unsheathed/models/item/golden_sword.json
 432f83a4298b11415baf2076b1d8eb1daad8db33 assets/unsheathed/models/item/iron_broadsword.json
 937e4cb1709c86627c7b6d83c0cfd2f054a520b3 assets/unsheathed/models/item/iron_cleaver.json
 5b8c45660bf615c1c91ff2f3bd3e094c828f41e7 assets/unsheathed/models/item/iron_cutlass.json

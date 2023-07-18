@@ -14,12 +14,12 @@ public final class UnsheathedDataGenerator {
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-        DataGenerator generator = event.getGenerator();
+        var generator = event.getGenerator().getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         // Client
-        generator.addProvider(event.includeClient(), new ModLangProvider(generator));
-        generator.addProvider(event.includeClient(), new ModItemModelProvider(generator, existingFileHelper));
+        event.getGenerator().addProvider(event.includeClient(), new ModLangProvider(generator));
+        event.getGenerator().addProvider(event.includeClient(), new ModItemModelProvider(generator, existingFileHelper));
 
         // Server
     }

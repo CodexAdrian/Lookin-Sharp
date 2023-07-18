@@ -1,0 +1,38 @@
+{
+  "type": "unsheathed:forging",
+  "input": {
+    "item": "minecraft:diamond_sword"
+  },
+  "results": [
+    {
+      "id": "unsheathed:diamond_sword"
+    },
+    {
+      "id": "unsheathed:diamond_broadsword"
+    },
+    {
+      "id": "unsheathed:diamond_cutlass"
+    },
+    {
+      "id": "unsheathed:diamond_shortsword"
+    },
+    {
+      "id": "unsheathed:diamond_gladius"
+    },
+    {
+      "id": "unsheathed:diamond_cleaver"
+    },
+    {
+      "id": "unsheathed:diamond_honed_sword"
+    },
+    {
+      "id": "unsheathed:diamond_greatsword"
+    },
+    {
+      "id": "unsheathed:diamond_scythe"
+    },
+    {
+      "id": "unsheathed:diamond_spear"
+    }
+  ]
+}
