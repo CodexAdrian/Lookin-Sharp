@@ -24,7 +24,7 @@ public class ModLangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemGroup.unsheathed.main", "Unsheathed");
+        add("itemGroup.unsheathed.main", "Unnamed Sword Mod, name needs more beans");
 
         List.of(BuiltinTraits.values()).forEach(trait -> add(ToolTraitApi.getTraitId(trait).toLanguageKey("trait"), StringUtils.capitalise(trait.name().toLowerCase(Locale.ROOT))));
         List.of(BuiltinRarities.values()).forEach(rarity -> add(ToolRarityApi.getRarityId(rarity).toLanguageKey("rarity"), StringUtils.capitalise(rarity.name().toLowerCase(Locale.ROOT))));

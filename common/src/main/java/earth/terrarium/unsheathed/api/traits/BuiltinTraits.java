@@ -32,8 +32,8 @@ public enum BuiltinTraits implements ToolTrait {
         @Override
         public void modifyAttributes(ItemStack stack, EquipmentSlot slot, AttributeModificationFunction function, ToolRarity rarity) {
             if(slot == EquipmentSlot.MAINHAND) {
-                function.modifyAttribute(Attributes.ATTACK_DAMAGE, new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Trait modifier", 0.1 * rarity.getMultiplier(), AttributeModifier.Operation.ADDITION));
-                function.modifyAttribute(Attributes.ATTACK_SPEED, new AttributeModifier(ATTACK_SPEED_MODIFIER, "Trait modifier", 0.1 * rarity.getMultiplier(), AttributeModifier.Operation.ADDITION));
+                function.modifyAttribute(Attributes.ATTACK_DAMAGE, new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Trait modifier", 0.5 * rarity.getMultiplier(), AttributeModifier.Operation.ADDITION));
+                function.modifyAttribute(Attributes.ATTACK_SPEED, new AttributeModifier(ATTACK_SPEED_MODIFIER, "Trait modifier", -0.2 * rarity.getMultiplier(), AttributeModifier.Operation.ADDITION));
             }
         }
     },
@@ -70,12 +70,12 @@ public enum BuiltinTraits implements ToolTrait {
         }
     };
 
-    public static final UUID ATTACK_SPEED_MODIFIER = UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3");
-    public static final UUID ATTACK_DAMAGE_MODIFIER = UUID.fromString("CB3F55D3-645C-4F38-A497-9C13A33DB5CF");
-    public static final UUID MOVEMENT_SPEED_MODIFIER = UUID.fromString("662A6B8D-DA3E-4C1C-8813-96EA6097278D");
-    public static final UUID ARMOR_MODIFIER = UUID.fromString("845DB27C-C624-495F-8C9F-6020A9A58B6B");
-    public static final UUID ARMOR_TOUGHNESS_MODIFIER = UUID.fromString("D8499B04-0E66-4726-AB29-64469D734E0D");
-    public static final UUID MAX_HEALTH_MODIFIER = UUID.fromString("5D6F0BA2-1186-46AC-B896-C61C5CEE99CC");
+    public static final UUID ATTACK_SPEED_MODIFIER = UUID.fromString("c64d76aa-25ab-11ee-be56-0242ac120002");
+    public static final UUID ATTACK_DAMAGE_MODIFIER = UUID.fromString("c1baa63a-25ab-11ee-be56-0242ac120002");
+    public static final UUID MOVEMENT_SPEED_MODIFIER = UUID.fromString("cc3fede0-25ab-11ee-be56-0242ac120002");
+    public static final UUID ARMOR_MODIFIER = UUID.fromString("d08eb552-25ab-11ee-be56-0242ac120002");
+    public static final UUID ARMOR_TOUGHNESS_MODIFIER = UUID.fromString("d3f54990-25ab-11ee-be56-0242ac120002");
+    public static final UUID MAX_HEALTH_MODIFIER = UUID.fromString("d7608fa4-25ab-11ee-be56-0242ac120002");
 
     private final int weight;
 

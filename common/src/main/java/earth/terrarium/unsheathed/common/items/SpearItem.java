@@ -22,8 +22,8 @@ public class SpearItem extends BaseSword {
     public SpearItem(Tier tier, Properties properties) {
         super(new WrappedTier.Builder(tier).maxUses(1.5f).build(), 4, -2f, properties);
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
-        builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Weapon modifier", this.getDamage(), AttributeModifier.Operation.ADDITION));
-        builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Weapon modifier", -2.2f, AttributeModifier.Operation.ADDITION));
+        builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Weapon modifier", this.getDamage() * .9, AttributeModifier.Operation.ADDITION));
+        builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Weapon modifier", -2.6f, AttributeModifier.Operation.ADDITION));
         builder.put(PlatformUtils.getAttackRangeAttribute(), new AttributeModifier(Unsheathed.BASE_RANGE, "Weapon modifier", 2, AttributeModifier.Operation.ADDITION));
         builder.put(PlatformUtils.getReachAttribute(), new AttributeModifier(Unsheathed.BASE_REACH, "Weapon modifier", 0.5, AttributeModifier.Operation.ADDITION));
         this.defaultModifiers = builder.build();
