@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "unsheathed",
+  "id": "lookinsharp",
   "version": "${version}",
-  "name": "Unsheathed",
+  "name": "Lookin' Sharp!",
   "description": "",
   "authors": [
     "Joosh",
@@ -11,20 +11,20 @@
   "contributors": [
   ],
   "contact": {
-    "website": "https://www.curseforge.com/minecraft/mc-mods/modid",
-    "repo": "https://github.com/terrarium-earth/modid",
-    "issues": "https://github.com/terrarium-earth/modid/issues"
+    "website": "https://www.curseforge.com/minecraft/mc-mods/lookin-sharp",
+    "repo": "https://github.com/terrarium-earth/lookin-sharp",
+    "issues": "https://github.com/terrarium-earth/lookin-sharp/issues"
   },
   "license": "Terrarium Licence",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.unsheathed.fabric.UnsheathedFabric",
-      "earth.terrarium.unsheathed.Unsheathed::postInit"
+      "earth.terrarium.unsheathed.fabric.LookinSharpFabric",
+      "earth.terrarium.unsheathed.LookinSharp::postInit"
     ],
     "client": [
-      "earth.terrarium.unsheathed.client.fabric.UnsheathedClientFabric"
+      "earth.terrarium.unsheathed.client.fabric.LookinSharpClientFabric"
     ]
   },
   "mixins": [
