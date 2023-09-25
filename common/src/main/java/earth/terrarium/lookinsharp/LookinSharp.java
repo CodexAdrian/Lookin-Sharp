@@ -3,10 +3,8 @@ package earth.terrarium.lookinsharp;
 import com.mojang.logging.LogUtils;
 import earth.terrarium.lookinsharp.api.rarities.ToolRarityApi;
 import earth.terrarium.lookinsharp.api.traits.ToolTraitApi;
-import earth.terrarium.lookinsharp.common.registry.ModBlocks;
-import earth.terrarium.lookinsharp.common.registry.ModItems;
-import earth.terrarium.lookinsharp.common.registry.ModMenus;
-import earth.terrarium.lookinsharp.common.registry.ModRecipes;
+import earth.terrarium.lookinsharp.common.registry.*;
+import earth.terrarium.lookinsharp.compat.botarium.BotariumCompat;
 import org.slf4j.Logger;
 
 import java.util.UUID;
@@ -28,8 +26,10 @@ public class LookinSharp {
         ModRecipes.RECIPE_SERIALIZERS.init();
         ModRecipes.RECIPE_TYPES.init();
         ModMenus.MENUS.init();
+        BotariumCompat.init();
         ToolRarityApi.rollRarity();
         ToolTraitApi.rollTrait();
+        ModAbilities.init();
     }
 
     public static void postInit() {

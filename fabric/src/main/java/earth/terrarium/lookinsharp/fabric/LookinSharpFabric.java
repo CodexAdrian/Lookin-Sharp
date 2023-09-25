@@ -7,7 +7,9 @@ import earth.terrarium.lookinsharp.api.rarities.ToolRarityApi;
 import earth.terrarium.lookinsharp.api.traits.ToolTrait;
 import earth.terrarium.lookinsharp.api.traits.ToolTraitApi;
 import earth.terrarium.lookinsharp.common.registry.ModItems;
+import earth.terrarium.lookinsharp.common.util.PlatformUtils;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.item.v1.ModifyItemAttributeModifiersCallback;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.registries.Registries;
@@ -27,5 +29,6 @@ public class LookinSharpFabric implements ModInitializer {
                 toolTrait.modifyAttributes(stack, slot, attributeModifiers::put, toolRarity);
             }
         });
+        ServerLivingEntityEvents.ALLOW_DAMAGE.register(PlatformUtils::onEntityHit);
     }
 }

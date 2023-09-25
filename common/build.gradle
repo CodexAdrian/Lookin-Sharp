@@ -12,6 +12,7 @@ dependencies {
     modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin:$rootProject.rei_version"
 
     modApi "com.teamresourceful.resourcefullib:resourcefullib-common-$minecraft_version:$rootProject.resourcefullib_version"
+    modApi "earth.terrarium:botarium-common-$minecraft_version:$rootProject.botarium_version"
 }
 
 processResources {

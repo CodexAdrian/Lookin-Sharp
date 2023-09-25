@@ -49,6 +49,7 @@ dependencies {
     modLocalRuntime("mezz.jei:jei-$rootProject.minecraft_version-forge:$rootProject.jei_version") { transitive = false }
 
     modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$minecraft_version:$rootProject.resourcefullib_version"
+    modApi "earth.terrarium:botarium-fabric-$minecraft_version:$rootProject.botarium_version"
 }
 
 processResources {

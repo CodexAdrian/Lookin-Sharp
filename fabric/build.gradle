@@ -40,6 +40,7 @@ dependencies {
     modApi "com.teamresourceful.resourcefullib:resourcefullib-fabric-$minecraft_version:$rootProject.resourcefullib_version"
 
     include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:$rea_version")
+    modApi "earth.terrarium:botarium-fabric-$minecraft_version:$rootProject.botarium_version"
 }
 
 processResources {

@@ -20,15 +20,22 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.unsheathed.fabric.LookinSharpFabric",
-      "earth.terrarium.unsheathed.LookinSharp::postInit"
+      "earth.terrarium.lookinsharp.fabric.LookinSharpFabric",
+      "earth.terrarium.lookinsharp.LookinSharp::postInit"
     ],
     "client": [
-      "earth.terrarium.unsheathed.client.fabric.LookinSharpClientFabric"
+      "earth.terrarium.lookinsharp.client.fabric.LookinSharpClientFabric"
+    ],
+    "jei_mod_plugin": [
+      "earth.terrarium.lookinsharp.compat.jei.JEIPlugin"
+    ],
+    "rei_client": [
+      "earth.terrarium.lookinsharp.compat.rei.REIPlugin"
     ]
   },
   "mixins": [
-    "unsheathed.mixins.json"
+    "lookinsharp.mixins.json",
+    "lookinsharp-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",

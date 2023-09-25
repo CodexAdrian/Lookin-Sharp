@@ -8,10 +8,12 @@ import earth.terrarium.lookinsharp.api.traits.ToolTraitApi;
 import earth.terrarium.lookinsharp.client.forge.LookinSharpClientForge;
 import earth.terrarium.lookinsharp.client.LookinSharpClient;
 import earth.terrarium.lookinsharp.common.registry.ModItems;
+import earth.terrarium.lookinsharp.common.util.PlatformUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -29,6 +31,7 @@ public class LookinSharpForge {
         bus.addListener(LookinSharpForge::onClientSetup);
         bus.addListener(LookinSharpForge::onRegisterCreativeTabs);
         MinecraftForge.EVENT_BUS.addListener(LookinSharpForge::modifyAttributesEvent);
+        MinecraftForge.EVENT_BUS.addListener((LivingDamageEvent event) -> PlatformUtils.onEntityHit(event.getEntity(), event.getSource(), event.getAmount()));
     }
 
     public static void commonSetup(FMLCommonSetupEvent event) {
