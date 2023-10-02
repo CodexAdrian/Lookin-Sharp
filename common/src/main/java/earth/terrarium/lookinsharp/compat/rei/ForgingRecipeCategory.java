@@ -24,11 +24,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ForgingRecipeCategory implements DisplayCategory<ForgingRecipeCategory.FlattenedRecipe> {
-    private final CategoryIdentifier<FlattenedRecipe> id;
+    public static final CategoryIdentifier<FlattenedRecipe> ID = CategoryIdentifier.of(new ResourceLocation("lookinsharp", "forging"));
     private final ItemStack icon;
 
     public ForgingRecipeCategory() {
-        this.id = CategoryIdentifier.of(new ResourceLocation("lookinsharp", "forging"));
         this.icon = ModItems.FORGING_ANVIL.get().getDefaultInstance();
     }
 
@@ -61,7 +60,7 @@ public class ForgingRecipeCategory implements DisplayCategory<ForgingRecipeCateg
 
     @Override
     public CategoryIdentifier<? extends FlattenedRecipe> getCategoryIdentifier() {
-        return id;
+        return ID;
     }
 
     public record FlattenedRecipe(

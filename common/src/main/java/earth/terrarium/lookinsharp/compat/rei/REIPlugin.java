@@ -3,6 +3,7 @@ package earth.terrarium.lookinsharp.compat.rei;
 import earth.terrarium.lookinsharp.common.items.BaseSword;
 import earth.terrarium.lookinsharp.common.recipe.ArtifactAttachmentRecipe;
 import earth.terrarium.lookinsharp.common.recipe.ForgingRecipe;
+import earth.terrarium.lookinsharp.common.registry.ModItems;
 import earth.terrarium.lookinsharp.common.registry.ModRecipes;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;
@@ -34,6 +35,7 @@ public class REIPlugin implements REIClientPlugin {
     @Override
     public void registerCategories(CategoryRegistry registry) {
         registry.add(new ForgingRecipeCategory());
+        registry.addWorkstations(ForgingRecipeCategory.ID, EntryIngredients.of(ModItems.FORGING_ANVIL.get().getDefaultInstance()));
     }
 
     @Override

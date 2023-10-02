@@ -1,5 +1,6 @@
 package earth.terrarium.lookinsharp.forge;
 
+import com.mojang.serialization.Codec;
 import earth.terrarium.lookinsharp.LookinSharp;
 import earth.terrarium.lookinsharp.api.rarities.ToolRarity;
 import earth.terrarium.lookinsharp.api.rarities.ToolRarityApi;
@@ -11,6 +12,7 @@ import earth.terrarium.lookinsharp.common.registry.ModItems;
 import earth.terrarium.lookinsharp.common.util.PlatformUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.ItemAttributeModifierEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
@@ -20,12 +22,20 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 @Mod(LookinSharp.MOD_ID)
 public class LookinSharpForge {
+    public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_TABLES = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, LookinSharp.MOD_ID);
+
+    public static final RegistryObject<Codec<ArtifactLootModifier>> TEMPAD_LOOT_MODIFIER = LOOT_TABLES.register("artifact_drop", ArtifactLootModifier.CODEC);
+
     public LookinSharpForge() {
         LookinSharp.init();
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        LOOT_TABLES.register(bus);
         bus.addListener(LookinSharpForge::commonSetup);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> LookinSharpClientForge::init);
         bus.addListener(LookinSharpForge::onClientSetup);
