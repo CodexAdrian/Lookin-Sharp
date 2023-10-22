@@ -1,4 +1,20 @@
 {
+  "ability.lookinsharp.freeze": "§3Glacial Freeze",
+  "ability.lookinsharp.freeze.desc": "Mobs hit by your sword are frozen in place!",
+  "ability.lookinsharp.golem": "§7Golem Battering",
+  "ability.lookinsharp.golem.desc": "Mobs hit by your sword go flying!",
+  "ability.lookinsharp.life_steal": "§bLife Steal",
+  "ability.lookinsharp.life_steal.desc": "You heal when you hit mobs with your sword!",
+  "ability.lookinsharp.poison": "§2Poisonous Strike",
+  "ability.lookinsharp.poison.desc": "Mobs hit by your sword are poisoned!",
+  "ability.lookinsharp.random": "§5Witch's Tonic",
+  "ability.lookinsharp.random.desc": "Mobs hit by your sword are randomly afflicted with a potion effect, or you are afflicted with a helpful potion effect!",
+  "ability.lookinsharp.slowness": "§aSticky Slowness",
+  "ability.lookinsharp.slowness.desc": "Mobs hit by your sword are slowed!",
+  "ability.lookinsharp.weakness": "§6Weakening Strike",
+  "ability.lookinsharp.weakness.desc": "Mobs hit by your sword are weakened!",
+  "ability.lookinsharp.wither": "§fWithering Strike",
+  "ability.lookinsharp.wither.desc": "Mobs hit by your sword are withered!",
   "block.lookinsharp.forging_station": "Forging Station",
   "item.lookinsharp.battering_artifact": "Battering Artifact",
   "item.lookinsharp.deadly_artifact": "Deadly Artifact",
@@ -86,11 +102,5 @@
   "rarity.lookinsharp.legendary": "Legendary",
   "rarity.lookinsharp.rare": "Rare",
   "rarity.lookinsharp.uncommon": "Uncommon",
-  "trait.lookinsharp.heavy": "Heavy",
-  "trait.lookinsharp.invigorating": "Invigorating",
-  "trait.lookinsharp.light": "Light",
-  "trait.lookinsharp.nimble": "Nimble",
-  "trait.lookinsharp.sharp": "Sharp",
-  "trait.lookinsharp.sturdy": "Sturdy",
-  "trait.lookinsharp.tough": "Tough"
+  "tooltip.lookinsharp.energy": "§d⚡§7 %s§d / §7%s"
 }
