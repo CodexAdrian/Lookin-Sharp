@@ -9,16 +9,4 @@ import java.util.List;
 
 public interface ToolAbility {
     default boolean onHit(DamageSource source, LivingEntity victim, float amount) { return true; }
-
-    default String getOrCreateNameId() {
-        return Util.makeDescriptionId("tool_ability", ResourceLocation.tryParse(ToolAbilityManager.getName(this)));
-    }
-
-    default String getNameId() {
-        return this.getOrCreateNameId();
-    }
-
-    default String getDescriptionId() {
-        return this.getOrCreateNameId() + ".desc";
-    }
 }

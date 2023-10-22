@@ -12,7 +12,7 @@ public class ToolAbilityManager {
     public static Codec<ToolAbility> CODEC = Codec.STRING.xmap(ToolAbilityManager::getAbility, ToolAbilityManager::getName);
     private static final Map<String, ToolAbility> ABILITY_MAP = new HashMap<>();
 
-    public static final ToolAbility BLANK = registerAbility("spirit:blank", new ToolAbility() {
+    public static final ToolAbility BLANK = registerAbility("lookinsharp:blank", new ToolAbility() {
     });
 
     public static ToolAbility registerAbility(String name, ToolAbility ability) {
