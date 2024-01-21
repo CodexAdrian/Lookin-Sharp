@@ -3,6 +3,8 @@ package earth.terrarium.lookinsharp.datagen.provider.client;
 import earth.terrarium.lookinsharp.LookinSharp;
 import earth.terrarium.lookinsharp.api.rarities.BuiltinRarities;
 import earth.terrarium.lookinsharp.api.rarities.ToolRarityApi;
+import earth.terrarium.lookinsharp.api.traits.BuiltinTraits;
+import earth.terrarium.lookinsharp.api.traits.ToolTraitApi;
 import earth.terrarium.lookinsharp.common.registry.ModBlocks;
 import earth.terrarium.lookinsharp.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
@@ -40,6 +42,7 @@ public class ModLangProvider extends LanguageProvider {
         add("ability.lookinsharp.life_steal.desc", "You heal when you hit mobs with your sword!");
         add("tooltip.lookinsharp.energy", "§d⚡§7 %s§d / §7%s");
 
+        List.of(BuiltinTraits.values()).forEach(trait -> add(ToolTraitApi.getTraitId(trait).toLanguageKey("trait"), StringUtils.capitalise(trait.name().toLowerCase(Locale.ROOT))));
         List.of(BuiltinRarities.values()).forEach(rarity -> add(ToolRarityApi.getRarityId(rarity).toLanguageKey("rarity"), StringUtils.capitalise(rarity.name().toLowerCase(Locale.ROOT))));
 
         ModBlocks.BLOCKS.stream().forEach(entry -> addBlock(entry, StringUtils.capitaliseAllWords(entry.getId().getPath().replace('_', ' '))));
