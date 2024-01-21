@@ -102,5 +102,12 @@
   "rarity.lookinsharp.legendary": "Legendary",
   "rarity.lookinsharp.rare": "Rare",
   "rarity.lookinsharp.uncommon": "Uncommon",
-  "tooltip.lookinsharp.energy": "§d⚡§7 %s§d / §7%s"
+  "tooltip.lookinsharp.energy": "§d⚡§7 %s§d / §7%s",
+  "trait.lookinsharp.heavy": "Heavy",
+  "trait.lookinsharp.invigorating": "Invigorating",
+  "trait.lookinsharp.light": "Light",
+  "trait.lookinsharp.nimble": "Nimble",
+  "trait.lookinsharp.sharp": "Sharp",
+  "trait.lookinsharp.sturdy": "Sturdy",
+  "trait.lookinsharp.tough": "Tough"
 }
